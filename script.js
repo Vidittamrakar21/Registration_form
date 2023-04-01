@@ -3,7 +3,7 @@ function me(){
     let user = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let mob = document.getElementById("mob").value;
-    let type = document.getElementById("type").value;
+    let work = document.getElementById("type").value;
     
     if(user === "" && email === "" && mob === "" && type === ""){
         alert("All the details must be filled completely to Register")
@@ -18,6 +18,11 @@ function me(){
         down.style.display = "block"
         alert("Registration completed successfully!")
     }
+    
+    localStorage.setItem("textvalue",user);
+    localStorage.setItem("emailvalue",email);
+    localStorage.setItem("numvalue",mob);
+    localStorage.setItem("workvalue",work);
     
     
 }
